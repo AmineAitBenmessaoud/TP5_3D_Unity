@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,13 +14,14 @@ public class PlanetManager : MonoBehaviour {
     public GameObject Uranus;
     public GameObject Neptune;
 
-    private void Awake(){         
+    private void Awake(){     
         if (current == null){            
             current = this;         
         }        
         else{             
             Destroy(obj: this);        
         }     
+        date = DateTime.Now;
     }
     public event Action<DateTime> OnTimeChange; 
     public void TimeChanged(DateTime newTime) { 
@@ -34,5 +36,9 @@ public class PlanetManager : MonoBehaviour {
             date = value;
             TimeChanged(value.dateTime); //Fire the event
         }     
-    }  
+    }
+    private void Update()
+    {
+        Date = date.dateTime.AddDays(0.1);
+}
 } 
