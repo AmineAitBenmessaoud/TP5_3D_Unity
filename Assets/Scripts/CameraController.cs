@@ -30,7 +30,26 @@ public class CameraController : MonoBehaviour
         rotateValue = new Vector3(x, y * -1, 0);
         transform.eulerAngles = transform.eulerAngles - rotateValue;
         }
+        //for focusing the camera on an object
+        if (Input.GetMouseButtonDown(0)) // Checking for a left mouse click
+        {
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
 
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Checking if the hit object is the one you want to focus on : the planets ofc
+
+                if (hit.transform.CompareTag("TrackingObject"))
+                {
+                    // Adjusting the camera position
+                    cam.transform.position = hit.transform.position + new Vector3(0, 50, -50); // Adjusting the position as needed
+
+                    // Making the camera look at the clicked object
+                    cam.transform.LookAt(hit.transform);
+                }
+            }
+        }
 
     }
     public void ZoomCamera(float zoom)
