@@ -39,6 +39,5 @@ public class PlanetManager : MonoBehaviour {
     }
     private void Update()
     {
-        Date = date.dateTime.AddDays(0.1);
 }
 } 
