@@ -471,6 +471,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 137279042}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &137279046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123763247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e98c0d450919d3e46b21b9ef68327d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetObject: {fileID: 123763247}
+  PlanetName: 7
+  size: 49.244
+  info: Neptune is the eighth and farthest known planet from the Sun.
 --- !u!1001 &157730963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1635,6 +1651,23 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 256709529}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &512523905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512523902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e98c0d450919d3e46b21b9ef68327d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetObject: {fileID: 512523902}
+  PlanetName: 2
+  size: 12.742
+  info: Earth is the third planet from the Sun and the only known planet to support
+    life
 --- !u!1 &586362356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2273,6 +2306,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 606613592}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &848448976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848448973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e98c0d450919d3e46b21b9ef68327d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetObject: {fileID: 848448973}
+  PlanetName: 1
+  size: 12.104
+  info: Venus is known for its thick and toxic atmosphere.
 --- !u!1 &863027661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2651,6 +2700,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 992282781}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &992282785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66948891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e98c0d450919d3e46b21b9ef68327d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetObject: {fileID: 66948891}
+  PlanetName: 6
+  size: 50.724
+  info: Uranus is unique for its tilt, as it rotates almost on its side.
 --- !u!1 &1056046398
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,6 +3339,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 437541058}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1308259733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308259730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e98c0d450919d3e46b21b9ef68327d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetObject: {fileID: 1308259730}
+  PlanetName: 3
+  size: 6.779
+  info: Mars is often referred to as the 'Red Planet' due to its reddish appearance.
 --- !u!1 &1526980365
 GameObject:
   m_ObjectHideFlags: 0
@@ -3713,6 +3794,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1780738091}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1780738095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e98c0d450919d3e46b21b9ef68327d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetObject: {fileID: 0}
+  PlanetName: 0
+  size: 0
+  info: 
+--- !u!114 &1780738096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e98c0d450919d3e46b21b9ef68327d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetObject: {fileID: 1763124}
+  PlanetName: 5
+  size: 116.464
+  info: Saturn is known for its stunning ring system.
 --- !u!1 &1793686981
 GameObject:
   m_ObjectHideFlags: 0
@@ -4236,12 +4349,45 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1946680567}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1946680571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896456919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e98c0d450919d3e46b21b9ef68327d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetObject: {fileID: 1896456919}
+  PlanetName: 4
+  size: 139.822
+  info: Jupiter is the largest planet in our solar system and has a strong magnetic
+    field.
 --- !u!1 &2034854870 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1856687845478954, guid: ab152f61198d54532ae39108e616ff59,
     type: 3}
   m_PrefabInstance: {fileID: 464864798}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2034854873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034854870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e98c0d450919d3e46b21b9ef68327d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetObject: {fileID: 2034854870}
+  PlanetName: 0
+  size: 4880
+  info: Mercury is the closest planet to the Sun and has a thin atmosphere.
 --- !u!1001 &1570408459668571515
 PrefabInstance:
   m_ObjectHideFlags: 0
