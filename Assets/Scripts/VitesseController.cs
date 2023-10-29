@@ -1,9 +1,10 @@
-using UnityEngine;
-using UnityEngine.UI;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using TMPro;
+using UnityEngine;
 
-public class YearController : MonoBehaviour
+public class VitesseController : MonoBehaviour
 {
     public TMP_InputField dateInputField;
 
@@ -15,16 +16,16 @@ public class YearController : MonoBehaviour
 
     public void HandleDateInput(string text)
     {
-        // Convertissez le texte de la zone de texte en date
-        DateTime newDate;
-        if (DateTime.TryParse(text, out newDate))
+        // Convertissez le texte de la zone de texte en vitesse (double)
+        double vitesse;
+        if (double.TryParse(text, out vitesse))
         {
             // Mettez à jour la date dans votre modèle (PlanetManager)
-            PlanetManager.current.Date = newDate;
+            PlanetManager.current.set_vitesse(vitesse);
         }
         else
         {
-            Debug.LogError("Bad format of the date");
+            Debug.LogError("Bad format of vitesse");
         }
     }
 }

@@ -2,7 +2,9 @@ using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;  
+using UnityEngine;
+using UnityEngine.WSA;
+
 public class PlanetManager : MonoBehaviour {     
     public static PlanetManager current;
     public GameObject Mercury;
@@ -13,8 +15,12 @@ public class PlanetManager : MonoBehaviour {
     public GameObject Saturn;
     public GameObject Uranus;
     public GameObject Neptune;
+    private bool dynamic;
+    private double vitesse;
 
-    private void Awake(){     
+    private void Awake(){
+        dynamic = false;
+        vitesse = 0.1;
         if (current == null){            
             current = this;         
         }        
@@ -39,5 +45,16 @@ public class PlanetManager : MonoBehaviour {
     }
     private void Update()
     {
-}
+         if (dynamic==true)
+        {
+           Date = date.dateTime.AddDays(vitesse);
+        }
+    }
+    public void set_dynamic(bool activate_dynamic) {
+        dynamic = activate_dynamic;
+    }
+    public void set_vitesse(double vitesse)
+    {
+        this.vitesse = vitesse;
+    }
 } 

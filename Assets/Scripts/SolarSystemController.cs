@@ -66,4 +66,7 @@ public class SolarSystemController : MonoBehaviour
             PlanetManager.current.Neptune.transform.localScale = scaleNeptune;
         }
     }
+    public void dynamic_activator(bool dynamic) {
+            PlanetManager.current.set_dynamic(dynamic);
+    }
  }
