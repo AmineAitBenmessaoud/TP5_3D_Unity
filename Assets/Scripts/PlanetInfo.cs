@@ -22,8 +22,8 @@ public class PlanetInfo : MonoBehaviour
     }
     void Start()
     {
-        infoText = GameObject.Find("InfoText").GetComponent<Text>(); // Replace "InfoText" with the name of your UI Text element.
-        infoText.enabled = false; // Initially, hide the text element.
+        infoText = GameObject.Find("InfoText").GetComponent<Text>(); //this is what i did to get the infotext object
+        infoText.enabled = false;
         
 }
 

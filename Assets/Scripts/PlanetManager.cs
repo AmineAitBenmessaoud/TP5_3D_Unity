@@ -15,6 +15,7 @@ public class PlanetManager : MonoBehaviour {
     public GameObject Saturn;
     public GameObject Uranus;
     public GameObject Neptune;
+    public List<PlanetInfo> planets = new List<PlanetInfo>();
     private bool dynamic;
     private double vitesse;
 
